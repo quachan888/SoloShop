@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&display=swap");
+
 .category a,
 .loginmenu a {
     color: #121212;
@@ -5,7 +7,51 @@
 
 .logo {
     text-decoration: none;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700 !important;
 }
+
+.profileicon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Search input  */
+.searchbtn {
+    border-radius: 0 40px 40px 0;
+    margin-left: -50px;
+}
+.searchinput {
+    border-radius: 40px;
+}
+
+/* Breadcumb smaller text */
+
+.breadcrumb-item {
+    font-size: 0.8em;
+}
+
+/* Product photo on main page */
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+#products img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+#products a {
+    text-decoration: none;
+    color: #121212;
+}
+
+/* FOOTER */
 
 #footer a {
     color: #fafafa;
@@ -28,35 +74,14 @@
     cursor: pointer;
 }
 
-.card:hover {
-    transform: scale(1.05);
-    transition: 0.2s ease-in;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
-}
-
-#products img {
+/* SLIDER */
+.carousel-inner img {
+    max-height: 50vh;
     width: 100%;
-    height: 150px;
     object-fit: cover;
 }
 
-#products a {
-    text-decoration: none;
-    color: #121212;
-}
-
-.profileicon {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.searchbtn {
-    border-radius: 0 40px 40px 0;
-    margin-left: -40px;
-}
-
-.searchinput {
-    border-radius: 40px;
+/* Map warning */
+.mapwarning {
+    font-size: 0.7rem;
 }

@@ -22,8 +22,8 @@
         <div class="container" id="navbar">
             <div class="row my-2">
                 <div class="col-lg-2 col-4 mx-auto mb-2">
-                    <a class="fs-2 fw-bold logo" href="index.html">
-                        <div class="display3 text-secondary">Solo<span class="text-primary">Shop</span></div>
+                    <a class="fs-1 fw-bold logo" href="index.html">
+                        <div class="text-secondary">Solo<span class="text-primary">Shop</span></div>
                     </a>
                 </div>
                 <div class="col-lg-5 col-8 text-align-right loginmenu order-lg-last">
@@ -53,7 +53,8 @@
         <!-- END NAVBAR -->
 
         <!-- CATEGORIES -->
-        <nav class="category navbar navbar-expand-lg nav-light border-bottom shadow-sm">
+
+        <nav class="category navbar navbar-expand-lg nav-light border-bottom">
             <div class="container">
                 <button class="navbar-toggler border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-store-alt"></i>
@@ -128,18 +129,104 @@
             </div>
         </nav>
 
-        <!-- CALL TO ACTION -->
-        <div class="row text-center mt-3 mb-2 p-0">
-            <div class="col mx-auto align-middle">
-                <span class="text-primary fw-bold text-nowrap">The simpler way to buy and sell locally!</span>
-                <button type="button" class="btn btn-primary text-nowrap">Get the App</button>
+        <!-- BREADCUMB -->
+        <div class="container my-3 d-none d-md-block">
+            <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Electronics & Media</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Macbook Pro 2015 (Core i7/16Gb/512Gb SSD)</li>
+                </ol>
+            </nav>
+        </div>
+
+        <!-- PRODUCT DETAIL COL 8/4 -->
+
+        <div class="container my-3">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row border bg-light">
+                        <div class="col-8 mx-auto">
+                            <!-- Product image carousel -->
+                            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://thumbor.offerup.com/HmrVkyOrsoTMKjJYDjcYunfW01k=/828x1104/da60/da60531fc32c4964ba172ccd5cbbb2eb.jpg" class="d-block w-100" alt="..." />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://thumbor.offerup.com/wQHQD_YXhZ3q0pehMx9XJBURVCk=/828x620/d64a/d64a979a69774d58a4171d4410baa0fc.jpg" class="d-block w-100" alt="..." />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://thumbor.offerup.com/plG5kLA9c40FgQ0ybxFps-58huM=/828x620/0006/00069a07b3ba4fb98c0825ce4f3ede0e.jpg" class="d-block w-100" alt="..." />
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Side col: Product name, price, short detail -->
+                <div class="col-md-4">
+                    <h5 class="fs-bold">Macbook Pro 2015 (Core i7/16Gb/512Gb SSD)</h5>
+                    <h3 class="fs-bold mb-3 fs-2">$780</h3>
+                    <p>Posted about 4 hours ago in Atlanta, GA</p>
+                    <p>Condition: Used (normal wear)</p>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="button">Make offer</button>
+                        <button class="btn btn-outline-secondary" type="button">Ask</button>
+                    </div>
+                    <div class="row text-center my-4">
+                        <div class="col-6">
+                            <a class="nav-link" href="#"><i class="far fa-heart"></i> Saved</a>
+                        </div>
+                        <div class="col-6">
+                            <a class="nav-link" href="#"><i class="fas fa-share-alt"></i> Share</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <hr />
+                    <h5 class="fw-bold">Description</h5>
+                    <p>Apple MacBook Pro 15-Inch "Core i7" 2.8 Mid-2015 (DG) Specs. Replaced Battery in May 2018 and upgraded storage to 1 TB.</p>
+                    <p>This Mac is in great condition and still operates as-new. It has upgraded storage of one terabyte and had the battery replaced in May 2018. It still operates extremely quickly and has not slowed down. I primarily used this laptop to edit photos and for work, but I have recently bought the newest version, so I am now selling this. Sold with charger.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <hr />
+                    <button class="btn btn-secondary btn-sm mx-2"><i class="far fa-heart"></i> Save</button>
+                    <button class="btn btn-secondary btn-sm mx-2"><i class="far fa-flag"></i> Report</button>
+                    <button class="btn btn-secondary btn-sm mx-2"><i class="fas fa-share-alt"></i> Share</button>
+                    <hr />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1333.8618889834904!2d-122.0306450622369!3d37.33123582095418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5b6c4951d0f%3A0xb651414deb31e9fb!2sApple%20Infinite%20Loop!5e0!3m2!1sen!2sus!4v1640731246104!5m2!1sen!2sus" width="100%" height="250" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+                    <p class="mapwarning">Map is approximate to keep seller’s location private.</p>
+                    <hr />
+                </div>
             </div>
         </div>
-        <!-- CALL TO ACTION -->
 
-        <!-- PRODUCTS LISTING LG-6 MD-4 SM-3 COL-2 -->
+        <!-- SIMILAR PRODUCTS  -->
         <section id="products">
             <div class="container">
+                <div class="row">
+                    <h5 class="fw-bold">Similar Items</h5>
+                </div>
                 <div class="row mb-3">
                     <!-- Single product -->
                     <div class="col-xl-2 col-lg-3 col-md-4 col-6 my-3">
@@ -225,13 +312,33 @@
                         </a>
                     </div>
                     <!-- END Single product -->
+                </div>
+
+                <div class="row">
+                    <h5 class="fw-bold">User's Items</h5>
+                </div>
+                <div class="row mb-3">
                     <!-- Single product -->
                     <div class="col-xl-2 col-lg-3 col-md-4 col-6 my-3">
                         <a href="product.html">
                             <div class="card">
-                                <img src="https://source.unsplash.com/weekly?car" class="card-img-top" alt="..." />
+                                <img src="https://thumbor.offerup.com/2fSouPzDmjdV1MLw92zW0yXtws8=/873x1063/d599/d5993646e46e446796bd4608e3dcc0c5.jpg" class="card-img-top" alt="..." />
                                 <div class="card-body">
-                                    <h6 class="card-title">Macbook Pro 2018</h6>
+                                    <h6 class="card-title">Macbook pro i7 500 GB excellent condition</h6>
+                                    <h6 class="card-subtitle mb-2">$490</h6>
+                                    <p class="card-text">Atlanta, GA</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- END Single product -->
+                    <!-- Single product -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6 my-3">
+                        <a href="product.html">
+                            <div class="card">
+                                <img src="https://thumbor.offerup.com/HmrVkyOrsoTMKjJYDjcYunfW01k=/828x1104/da60/da60531fc32c4964ba172ccd5cbbb2eb.jpg" class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h6 class="card-title">Apple Macbook Pro</h6>
                                     <h6 class="card-subtitle mb-2">$250</h6>
                                     <p class="card-text">Atlanta, GA</p>
                                 </div>
@@ -243,97 +350,22 @@
                     <div class="col-xl-2 col-lg-3 col-md-4 col-6 my-3">
                         <a href="product.html">
                             <div class="card">
-                                <img src="https://source.unsplash.com/weekly?macbook" class="card-img-top" alt="..." />
+                                <img src="https://thumbor.offerup.com/W9QgZIPENXzU-N0v3at2PCzYiaw=/1920x1920/ca03/ca03d292d1f34384a5774af4084477bb.jpg" class="card-img-top" alt="..." />
                                 <div class="card-body">
-                                    <h6 class="card-title">Macbook Pro 2018</h6>
-                                    <h6 class="card-subtitle mb-2">$250</h6>
-                                    <p class="card-text">Atlanta, GA</p>
+                                    <h6 class="card-title">2019 MacBook Pro W/ Touchscreen 13”</h6>
+                                    <h6 class="card-subtitle mb-2">$850</h6>
+                                    <p class="card-text">Decatur, GA</p>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <!-- END Single product -->
-                    <!-- Single product -->
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-6 my-3">
-                        <a href="product.html">
-                            <div class="card">
-                                <img src="https://source.unsplash.com/weekly?monitor" class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h6 class="card-title">Macbook Pro 2018</h6>
-                                    <h6 class="card-subtitle mb-2">$250</h6>
-                                    <p class="card-text">Atlanta, GA</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- END Single product -->
-                    <!-- Single product -->
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-6 my-3">
-                        <a href="product.html">
-                            <div class="card">
-                                <img src="https://source.unsplash.com/weekly?laptop/keyboard" class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h6 class="card-title">Macbook Pro 2018</h6>
-                                    <h6 class="card-subtitle mb-2">$250</h6>
-                                    <p class="card-text">Atlanta, GA</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- END Single product -->
-                    <!-- Single product -->
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-6 my-3">
-                        <a href="product.html">
-                            <div class="card">
-                                <img src="https://source.unsplash.com/weekly?laptop/work" class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h6 class="card-title">Macbook Pro 2018</h6>
-                                    <h6 class="card-subtitle mb-2">$250</h6>
-                                    <p class="card-text">Atlanta, GA</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- END Single product -->
-                    <!-- Single product -->
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-6 my-3">
-                        <a href="product.html">
-                            <div class="card">
-                                <img src="https://source.unsplash.com/weekly?laptop/typing" class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h6 class="card-title">Macbook Pro 2018</h6>
-                                    <h6 class="card-subtitle mb-2">$250</h6>
-                                    <p class="card-text">Atlanta, GA</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+
                     <!-- END Single product -->
                 </div>
             </div>
         </section>
-        <!-- PAGING -->
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-center">
-                            <li class="page-item disabled">
-                                <a class="page-link">Previous</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <!-- FOOTER -->
 
+        <!-- FOOTER -->
         <div class="section bg-primary text-light" id="footer">
             <div class="container">
                 <div class="row p-2 text-md-start text-center">
@@ -376,5 +408,8 @@
 
         <!-- Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <!-- Add more script -->
+        <script src="main.js"></script>
     </body>
 </html>
