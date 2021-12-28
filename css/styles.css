@@ -1,0 +1,34 @@
+.category a,
+.loginmenu a {
+    color: #121212;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+#footer a {
+    color: #fafafa;
+    display: block;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+    transition: 0.5s ease-in-out;
+}
+
+#footer .socialbottom a {
+    display: initial;
+}
+
+#footer .socialbottom a:hover {
+    text-shadow: 0 0 2px white;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
