@@ -2,6 +2,8 @@
 
 A web/app for user to buy and sell locally
 
+![alt text](https://github.com/quachan888/SoloShop/blob/main/img/index.png?raw=true)
+
 ## Description
 
 This is my first MERN project. So I try to clone OfferUp
