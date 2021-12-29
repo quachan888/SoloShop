@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+/* Primary Color: #0050A0
+Second: #12A8E0
+Red bright: #E5002B 
+Bright Purple A51890
+*/
+
+body {
+    font-family: "Lato", sans-serif;
+    color: #121212;
+}
 
 .category a,
 .loginmenu a {
@@ -49,6 +61,22 @@
 #products a {
     text-decoration: none;
     color: #121212;
+}
+
+.card-title,
+.card-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.card-subtitle {
+    font-weight: 700;
+}
+
+.card-text {
+    color: #8a8a8a;
+    font-size: 0.8rem;
 }
 
 /* FOOTER */
