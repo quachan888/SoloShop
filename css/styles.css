@@ -46,10 +46,17 @@ body {
 }
 
 /* Product photo on main page */
+.card {
+    border: none;
+}
 .card:hover {
     transform: scale(1.05);
     transition: 0.2s ease-in;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card-body {
+    padding: 0.5rem 0.1rem;
 }
 
 #products img {
@@ -64,14 +71,17 @@ body {
 }
 
 .card-title,
-.card-text {
+.card-text,
+.card-subtitle {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    font-size: 0.875rem;
+    font-weight: 700;
 }
 
 .card-subtitle {
-    font-weight: 700;
+    font-size: 1rem;
 }
 
 .card-text {
@@ -125,6 +135,34 @@ body {
     height: 80px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+/* SEARCH SIDEBAR */
+#sidesearch .nav-link,
+.form-check-label {
+    color: #121212;
+    font-size: 0.8rem;
+}
+
+#sidesearch .subcat {
+    margin-left: 1rem;
+}
+
+#sidesearch .nav-link.active {
+    font-weight: bold;
+}
+
+#sidesearch .nav-link:hover {
+    text-decoration: underline;
+}
+
+.filter-title,
+.filter-subtitle {
+    font-weight: bold;
+}
+
+.filter-subtitle {
+    font-size: 0.875rem;
 }
 
 /* TEST */

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/d5c41c1b7c.js" crossorigin="anonymous"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <!-- SEO -->
+        <meta property="og:image" content="./img/index.png" />
+        <meta property="og:site_name" content="SoloShop" />
+        <meta name="description" content="Instantly connect with local buyers and sellers on SoloShop! Buy and sell everything from cars and trucks, electronics, furniture, and more." />
+        <meta property="og:url" content="https://anquach.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Buy &amp; Sell Locally - SoloShop" />
+        <meta property="og:description" content="Instantly connect with local buyers and sellers on SoloShop! Buy and sell everything from cars and trucks, electronics, furniture, and more." />
+        <link rel="canonical" href="https://anquach.com/" />
+
+        <!-- Title -->
+        <title>Buy & Sell Locally - SoloShop</title>
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <div class="container" id="navbar">
+            <div class="row my-2">
+                <div class="col-lg-2 col-4 mx-auto mb-2">
+                    <a class="fs-1 logo" href="index.html">
+                        <div class="text-secondary">Solo<span class="text-primary">Shop</span></div>
+                    </a>
+                </div>
+                <div class="col-lg-5 col-8 text-align-right loginmenu order-lg-last">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item text-center d-none d-md-block">
+                            <a class="nav-link" href="#"><i class="far fa-heart"></i><br />Saved</a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link" href="#"><i class="fas fa-comments-dollar"></i><br />Inbox</a>
+                        </li>
+                        <li class="nav-item text-center d-none d-md-block">
+                            <a class="nav-link" href="#"><i class="fa fa-tag"></i><br />Selling</a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link" href="#"> <img class="profileicon" src="https://images.offerup.com/tcz15iLF8DSJKLo137vN3MjYMPE=/100x100/smart/a8de/a8dee998683f4e83adc0c65f3959e380.jpg" alt="seller profile icon" /> <i class="fas fa-chevron-down"></i> </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-md-10 mx-md-auto my-2">
+                    <form class="d-flex mx-5" action="search.html" method="get">
+                        <input class="form-control me-2 border border-primary searchinput" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-primary searchbtn" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- END NAVBAR -->
+
+        <!-- CATEGORIES -->
+        <nav class="category navbar navbar-expand-lg nav-light border-bottom shadow-sm">
+            <div class="container">
+                <button class="navbar-toggler border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-store-alt"></i>
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-tv"></i> Electronics & Media </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Audio</a></li>
+                                <li><a class="dropdown-item" href="#">Cellphones</a></li>
+                                <li><a class="dropdown-item" href="#">Photography</a></li>
+                                <li><a class="dropdown-item" href="#">Computer & Laptop</a></li>
+                                <li><a class="dropdown-item" href="#">TVs & Media</a></li>
+                                <li><a class="dropdown-item" href="#">Video games</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-box-tissue"></i> Home & Garden </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Furniture</a></li>
+                                <li><a class="dropdown-item" href="#">Household</a></li>
+                                <li><a class="dropdown-item" href="#">Appliances</a></li>
+                                <li><a class="dropdown-item" href="#">Kitchen & Dining</a></li>
+                                <li><a class="dropdown-item" href="#">Bathroom</a></li>
+                                <li><a class="dropdown-item" href="#">Home Improvement</a></li>
+                                <li><a class="dropdown-item" href="#">Lawn & Garden</a></li>
+                                <li><a class="dropdown-item" href="#">Home Decor</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-tshirt"></i> Clothes & Shoes </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Women's Clothing</a></li>
+                                <li><a class="dropdown-item" href="#">Men's Clothing</a></li>
+                                <li><a class="dropdown-item" href="#">Women's Shoes</a></li>
+                                <li><a class="dropdown-item" href="#">Men's Shoes</a></li>
+                                <li><a class="dropdown-item" href="#">Kid</a></li>
+                                <li><a class="dropdown-item" href="#">Jewelry & Accessories</a></li>
+                                <li><a class="dropdown-item" href="#">Other</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-running"></i> Sport & Outdoor </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Exercise</a></li>
+                                <li><a class="dropdown-item" href="#">Bikes</a></li>
+                                <li><a class="dropdown-item" href="#">Skateboarding</a></li>
+                                <li><a class="dropdown-item" href="#">Fishing</a></li>
+                                <li><a class="dropdown-item" href="#">Camping & Hiking</a></li>
+                                <li><a class="dropdown-item" href="#">Water Sports</a></li>
+                                <li><a class="dropdown-item" href="#">Golf</a></li>
+                                <li><a class="dropdown-item" href="#">Other</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-car"></i> Vehicles </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Cars & Truck</a></li>
+                                <li><a class="dropdown-item" href="#">Motocycles</a></li>
+                                <li><a class="dropdown-item" href="#">Campers & RVs</a></li>
+                                <li><a class="dropdown-item" href="#">Boats & Marine</a></li>
+                                <li><a class="dropdown-item" href="#">Trailers</a></li>
+                                <li><a class="dropdown-item" href="#">Tires & Rims</a></li>
+                                <li><a class="dropdown-item" href="#">Auto Parts & Accessories</a></li>
+                                <li><a class="dropdown-item" href="#">Other</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- BREADCUMB -->
+        <div class="container my-3 d-none d-md-block">
+            <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Electronics & Media</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Computer & Laptop</li>
+                </ol>
+            </nav>
+        </div>
+
+        <!-- MAIN: LEFT COL: CATEGORIES & FILTER -->
+        <div class="container">
+            <div class="row">
+                <!-- LEFT: Search Option -->
+                <div class="col-lg-2 col-md-3 col-sm-4 " id="sidesearch">
+                    <div class="row border rounded mb-3 py-3">
+                        <div class="col-12">
+                             <!-- Search categories -->
+                            <div>
+                                <a class="nav-link" href="#">All Categories</a>
+                                <a class="nav-link" href="#">Electronics & Media</a>
+                                <a class="nav-link subcat " href="#">Audio</a>
+                                <a class="nav-link subcat " href="#">Cellphones</a>
+                                <a class="nav-link subcat " href="#">Photography</a>
+                                <a class="nav-link subcat  active" href="#">Computer & Laptop</a>
+                                <a class="nav-link subcat " href="#">TVs & Media</a>
+                                <a class="nav-link subcat " href="#">Video games</a>
+                                </nav>
+                            </div>
+                        </div>
+                        
+
+                        <div class="col-12"><!-- Filter -->
+                            <hr class="my-3" />
+                            <div class="filter-title">Filters</div>
+                            <!-- Price range -->
+                            <div class="filter-subtitle my-2">Price range</div>
+                            <form class="d-flex align-items-center">
+                                <input class="form-control me-2 p-1" type="search" placeholder="Min" aria-label="Search Min" name="minSearch">to<input class="form-control me-2 p-1" type="search" placeholder="Max" aria-label="Search Max" name="maxSearch">
+                                <button class="btn btn-outline-primary" type="submit">Go</button>
+                              </form>
+                            <hr class="my-3" />
+                            <!-- Condition -->
+                            <div class="filter-subtitle my-2">Condition</div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="conditionNew">
+                                <label class="form-check-label" for="conditionNew">New</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="conditionReconditioned">
+                                <label class="form-check-label" for="conditionReconditioned">Reconditioned</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="conditionUsed">
+                                <label class="form-check-label" for="conditionUsed">Used (normal wear)</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="conditionForParts">
+                                <label class="form-check-label" for="conditionForParts">For Parts</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="conditionOther">
+                                <label class="form-check-label" for="conditionOther">Other</label>
+                              </div>
+                         
+                        </div>
+                        
+                    </div>
+                   
+                    
+                    
+                </div>
+                <!-- RIGHT: Search result -->
+                <div class="col-6-lg-10 col-md-9 col-sm-8">
+                    <div class="row mb-3" id="products">
+                        <!-- Single product -->
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6 mb-3">
+                            <a href="product.html">
+                                <div class="card">
+                                    <img src="https://thumbor.offerup.com/VQ0-ZS8fXEXcy_h5P0qUHIk7go4=/1440x1920/19a1/19a1f995c27649ea8141c393723fea33.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h6 class="card-title">Lange Ski Boots Size 24.5</h6>
+                                        <h6 class="card-subtitle mb-2">$50</h6>
+                                        <p class="card-text">Redmond, WA</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Single product -->
+                        <!-- Single product -->
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6 mb-3">
+                            <a href="product.html">
+                                <div class="card">
+                                    <img src="https://thumbor.offerup.com/0maXi_sHuvBavpnHBIgjQmZz5-4=/1280x960/7486/7486bc30fa584398b50770a61489ec5a.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h6 class="card-title">2007 Chevrolet Tahoe</h6>
+                                        <h6 class="card-subtitle mb-2">$11,995</h6>
+                                        <p class="card-text">Mukilteo, WA</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Single product -->
+                        <!-- Single product -->
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6 mb-3">
+                            <a href="product.html">
+                                <div class="card">
+                                    <img src="https://thumbor.offerup.com/z4F487PBGdiuqjJ7VO-Rl5te_vU=/1440x1920/20aa/20aa314f07e345eabb41f2ba70b66083.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h6 class="card-title">Fitness Dumbbell / Weights (10lbs, 5 Lbs, 2 Lbs)</h6>
+                                        <h6 class="card-subtitle mb-2">$10</h6>
+                                        <p class="card-text">Renton, WA</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Single product -->
+                        <!-- Single product -->
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6 mb-3">
+                            <a href="product.html">
+                                <div class="card">
+                                    <img src="https://thumbor.offerup.com/B0M2gMVcTV1Mk5k8FqL8F87KwOc=/1284x884/cf2a/cf2adc0bf54c46e0bfde4b2252e8d8bf.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h6 class="card-title">Stair Stepper Machine</h6>
+                                        <h6 class="card-subtitle mb-2">$40</h6>
+                                        <p class="card-text">Seatac, WA</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Single product -->
+                        <!-- Single product -->
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6 mb-3">
+                            <a href="product.html">
+                                <div class="card">
+                                    <img src="https://thumbor.offerup.com/qqf5PQNLsQf_ski59kAXqRMVo0g=/1041x786/d9bc/d9bcb87c884d45a4a1c3452ce0e36fd5.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h6 class="card-title">iPad pro</h6>
+                                        <h6 class="card-subtitle mb-2">$250</h6>
+                                        <p class="card-text">Sumner, WA</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Single product -->
+                        <!-- Single product -->
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6 mb-3">
+                            <a href="product.html">
+                                <div class="card">
+                                    <img src="https://thumbor.offerup.com/6nlpkJ0wYroUMRjBLydqR-kc4d8=/1922x1442/16fe/16fed1ee509445d7ab5d1fb01285e700.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h6 class="card-title">SALOMON X PRO 100 SKI BOOTS MEN'S</h6>
+                                        <h6 class="card-subtitle mb-2">$255</h6>
+                                        <p class="card-text">Atlanta, GA</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Single product -->
+                        <!-- Single product -->
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6 mb-3">
+                            <a href="product.html">
+                                <div class="card">
+                                    <img src="https://thumbor.offerup.com/X4D_yhAap-92En5MyPmgKqRAfP0=/1440x1920/8171/8171ab628e9c473a91f140a3941eadd2.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h6 class="card-title">lenovo 4440 laptop</h6>
+                                        <h6 class="card-subtitle mb-2">$100</h6>
+                                        <p class="card-text">Tacoma, WA</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Single product -->
+                        <!-- Single product -->
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6 mb-3">
+                            <a href="product.html">
+                                <div class="card">
+                                    <img src="https://thumbor.offerup.com/S95o0d-A4hgtscveOy2whBMr_pc=/1440x1920/3c14/3c146b023a5c4c3b99bcfb86edaedc6b.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h6 class="card-title">Beats Solo 3</h6>
+                                        <h6 class="card-subtitle mb-2">$80</h6>
+                                        <p class="card-text">Kent, WA</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Single product -->
+                        <!-- Single product -->
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6 mb-3">
+                            <a href="product.html">
+                                <div class="card">
+                                    <img src="https://thumbor.offerup.com/ojriiPt1yRzG1p68rKK7PUNj5cY=/454x1008/3d16/3d161e3deb2d4fdb8c4a62c39c5d3378.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h6 class="card-title">Dell XPS M1330 Laptop</h6>
+                                        <h6 class="card-subtitle mb-2">$150</h6>
+                                        <p class="card-text">Atlanta, GA</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Single product -->
+                        <!-- Single product -->
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6 mb-3">
+                            <a href="product.html">
+                                <div class="card">
+                                    <img src="https://thumbor.offerup.com/NcG5HQ_QPEgSOS8ZZhgHDZ70Cxs=/1440x1920/b0a8/b0a87a69214843e1b6bebe1c0fc15446.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h6 class="card-title">Hand Carved Wooden Box</h6>
+                                        <h6 class="card-subtitle mb-2">$15</h6>
+                                        <p class="card-text">Seattle, WA</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Single product -->
+                        <!-- Single product -->
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6 mb-3">
+                            <a href="product.html">
+                                <div class="card">
+                                    <img src="https://thumbor.offerup.com/3qxc_dVudx_JgYE94XmpGGI3SaA=/1079x819/15c3/15c3b4612e174339ae67583551e7bffe.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h6 class="card-title">Gaming Laptop</h6>
+                                        <h6 class="card-subtitle mb-2">$550</h6>
+                                        <p class="card-text">Redmond, WA</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Single product -->
+                        <!-- Single product -->
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6 mb-3">
+                            <a href="product.html">
+                                <div class="card">
+                                    <img src="https://thumbor.offerup.com/ERdIFr0Vlq10gtBUYhHaxEjT5f8=/1440x1920/3fb2/3fb227a5323343e18a9105dfc1a480fd.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h6 class="card-title">Topo Design Mountain Pack</h6>
+                                        <h6 class="card-subtitle mb-2">$25</h6>
+                                        <p class="card-text">Seattle, WA</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Single product -->
+                        <!-- Single product -->
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6 mb-3">
+                            <a href="product.html">
+                                <div class="card">
+                                    <img src="https://thumbor.offerup.com/bXxAZoHt2GR5XSKiGUeKo6u_SUQ=/1920x1920/062c/062c17300d544fa4b1b375c74e054218.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h6 class="card-title">Beats Solo Pro 3</h6>
+                                        <h6 class="card-subtitle mb-2">$100</h6>
+                                        <p class="card-text">Tacoma, WA</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Single product -->
+                        <!-- Single product -->
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6 mb-3">
+                            <a href="product.html">
+                                <div class="card">
+                                    <img src="https://thumbor.offerup.com/J5wMZpgVkKa1d7kR1Qgi-1V_Vfo=/756x756/1161/116118962b294454b898fdb4312460c0.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h6 class="card-title">Mens Arc'teryx Extreme Rain Gear</h6>
+                                        <h6 class="card-subtitle mb-2">$425</h6>
+                                        <p class="card-text">Snohomish, WA</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Single product -->
+                        <!-- Single product -->
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6 mb-3">
+                            <a href="product.html">
+                                <div class="card">
+                                    <img src="https://thumbor.offerup.com/xBOh2rHExYZr7okB7j7oChr1Nds=/1440x1920/4a76/4a7676564a274cad8f0e54d3568fe822.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h6 class="card-title">2-12” JL W3 Subwoofers In Bassworx Box</h6>
+                                        <h6 class="card-subtitle mb-2">$450</h6>
+                                        <p class="card-text">Harbor, WA</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Single product -->
+                        <!-- Single product -->
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6 mb-3">
+                            <a href="product.html">
+                                <div class="card">
+                                    <img src="https://thumbor.offerup.com/ww1iw1HEybgQbv2EDas40sNpp84=/1440x1920/faba/fabacbd0016948459d5595e165c87f0a.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h6 class="card-title">Hyperlite Wakeboard</h6>
+                                        <h6 class="card-subtitle mb-2">$100</h6>
+                                        <p class="card-text">Everett, WA</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Single product -->
+                        <!-- Single product -->
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6 mb-3">
+                            <a href="product.html">
+                                <div class="card">
+                                    <img src="https://thumbor.offerup.com/KBwHC5ItPobt-J2JegTvpnQsC4k=/1920x1920/f99c/f99c982a01a543d09d7831b15d8ed411.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h6 class="card-title">AirPods New</h6>
+                                        <h6 class="card-subtitle mb-2">$50</h6>
+                                        <p class="card-text">Kent, WA</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Single product -->
+                        <!-- Single product -->
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6 mb-3">
+                            <a href="product.html">
+                                <div class="card">
+                                    <img src="https://thumbor.offerup.com/VUQT4tMRmR6wCnhu2Hoob0h7y7E=/1920x1920/1957/1957cfdca32441959444972149320ca0.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h6 class="card-title">Dania Dining Table And Chairs</h6>
+                                        <h6 class="card-subtitle mb-2">$450</h6>
+                                        <p class="card-text">Everett, WA</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Single product -->
+                    </div>
+                    <!-- PAGING -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled">
+                                            <a class="page-link">Previous</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="section bg-primary text-light" id="footer">
+            <div class="container">
+                <div class="row p-2">
+                    <div class="col-md-3 col-6 my-2">
+                        <h5>Shop</h5>
+                        <a href="index.html">Home</a>
+                        <a href="#">How it works</a>
+                        <a href="#">Trust and Safety</a>
+                        <a href="#">Link</a>
+                    </div>
+                    <div class="col-md-3 col-6 my-2">
+                        <h5>Sell</h5>
+                        <a href="#">Post an item</a>
+                        <a href="#">Check messages</a>
+                    </div>
+                    <div class="col-md-3 col-6 my-2">
+                        <h5>About</h5>
+                        <a href="#">Our Story</a>
+                        <a href="#">Terms and Service</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                    <div class="col-md-3 col-6 my-2 text-center">
+                        <!-- Get the app button -->
+                        <button class="btn btn-outline-light my-2">Get the app</button>
+
+                        <!-- Social icon -->
+                        <div class="socialbottom">
+                            <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center p-3 fw-light font-monospace bg-dark">
+                <div class="col">&copy; 2021 An Quach - MERN Full Stack Project.</div>
+            </div>
+        </div>
+
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>
