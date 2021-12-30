@@ -52,28 +52,144 @@
             </div>
         </div>
 
-        <!-- Modal: LOGIN -->
-        <!-- Button trigger modal -->
+        <!-- Modal: LOGIN MAIN-->
         <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title fw-bold" id="loginModalLabel">Sign up / Log in</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="logo text-center fs-2 my-3">
+                        <div class="text-secondary">Solo<span class="text-primary">Shop</span></div>
+                    </div>
+                    <div class="modal-body mb-3">
+                        <div class="d-grid gap-2 col-9 mx-auto">
+                            <button class="btn btn-primary"><i class="fab fa-facebook"></i> Continue with Facebook</button>
+                            <button class="btn btn-success"><i class="fab fa-google"></i> Continue with Google</button>
+                            <button class="btn btn-dark"><i class="fab fa-apple"></i> Continue with Apple</button>
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#loginByEmailModal"><i class="far fa-envelope"></i> Continue with email</button>
+                        </div>
+                    </div>
+                    <div class="modal-footer mb-3">
+                        <p>By tapping any of the buttons above, you agree to the <a href="">SoloShop Terms of Service</a> and acknowledge the <a href="">SoloShop Privacy Policy</a></p>
+                        <p>This site is protected by reCAPTCHA and the <a href="">Google Privacy Policy</a> and the <a href="">Google Terms of Service</a> apply</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Modal: Login -> Email -->
+        <div class="modal fade" id="loginByEmailModal" tabindex="-1" aria-labelledby="loginByEmailModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bold" id="loginByEmailModalLabel">Sign up / Log in</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="logo text-center fs-2 my-3">
                         <div class="text-secondary">Solo<span class="text-primary">Shop</span></div>
                     </div>
-                    <div class="modal-body mb-5">
+                    <div class="modal-body mb-3">
                         <div class="d-grid gap-2 col-9 mx-auto">
-                            <button class="btn btn-primary" type="button"><i class="fab fa-facebook"></i> Continue with Facebook</button>
-                            <button class="btn btn-success" type="button"><i class="fab fa-google"></i> Continue with Google</button>
-                            <button class="btn btn-dark" type="button"><i class="fab fa-apple"></i> Continue with Apple</button>
-                            <button class="btn btn-warning" type="button"><i class="far fa-envelope"></i> Continue with email</button>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginEmailSignUpModal">Sign up</button>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginEmailLogInModal">Log in</button>
+                            <button class="btn btn-secondary mt-3" data-bs-toggle="modal" data-bs-target="#loginByEmailModal">Back</button>
                         </div>
                     </div>
-                    <div class="modal-footer mb-5">
+                    <div class="modal-footer mb-3">
+                        <p>By tapping any of the buttons above, you agree to the <a href="">SoloShop Terms of Service</a> and acknowledge the <a href="">SoloShop Privacy Policy</a></p>
+                        <p>This site is protected by reCAPTCHA and the <a href="">Google Privacy Policy</a> and the <a href="">Google Terms of Service</a> apply</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal: Login -> Email -> Sign up -->
+        <div class="modal fade" id="loginEmailSignUpModal" tabindex="-1" aria-labelledby="loginEmailSignUpModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bold" id="loginEmailSignUpModalLabel">Sign up / Log in</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="logo text-center fs-2 my-3">
+                        <div class="text-secondary">Solo<span class="text-primary">Shop</span></div>
+                    </div>
+                    <div class="modal-body mb-3">
+                        <div class="d-grid gap-2 col-10 mx-auto">
+                            <!-- Sign up form -->
+                            <form>
+                                <div class="mb-3">
+                                    <label for="signUpName" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="signUpName" aria-describedby="Name" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex. jonedoe@soloshop.com" />
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" />
+                                </div>
+
+                                <div class="d-grid gap-2 mx-auto">
+                                    <a href="#" class="text-center" data-bs-toggle="modal" data-bs-target="#loginEmailLogInModal">Already have an account? Log in</a>
+                                    <button type="submit" class="btn btn-primary">Sign up</button>
+                                </div>
+                            </form>
+
+                            <!-- Back to previous modal -->
+                            <button class="btn btn-secondary mt-3" data-bs-toggle="modal" data-bs-target="#loginByEmailModal">Back</button>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer mb-3">
+                        <p>By tapping any of the buttons above, you agree to the <a href="">SoloShop Terms of Service</a> and acknowledge the <a href="">SoloShop Privacy Policy</a></p>
+                        <p>This site is protected by reCAPTCHA and the <a href="">Google Privacy Policy</a> and the <a href="">Google Terms of Service</a> apply</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal: Login -> Email -> Log in -->
+        <div class="modal fade" id="loginEmailLogInModal" tabindex="-1" aria-labelledby="loginEmailLogInModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bold" id="loginEmailLogInModalLabel">Sign up / Log in</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="logo text-center fs-2 my-3">
+                        <div class="text-secondary">Solo<span class="text-primary">Shop</span></div>
+                    </div>
+                    <div class="modal-body mb-3">
+                        <div class="d-grid gap-2 col-10 mx-auto">
+                            <!-- Sign up form -->
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex. jonedoe@soloshop.com" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" />
+                                    <a href="" id="forgotPassword" class="form-text text-danger">Forgot your password?</a>
+                                </div>
+
+                                <div class="d-grid gap-2 mx-auto">
+                                    <a href="" class="text-center" data-bs-toggle="modal" data-bs-target="#loginEmailSignUpModal">Don't have an account? Sign up</a>
+                                    <button type="submit" class="btn btn-primary">Log in</button>
+                                </div>
+                            </form>
+
+                            <!-- Back to previous modal -->
+                            <button class="btn btn-secondary mt-3" data-bs-toggle="modal" data-bs-target="#loginByEmailModal">Back</button>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer mb-3">
                         <p>By tapping any of the buttons above, you agree to the <a href="">SoloShop Terms of Service</a> and acknowledge the <a href="">SoloShop Privacy Policy</a></p>
                         <p>This site is protected by reCAPTCHA and the <a href="">Google Privacy Policy</a> and the <a href="">Google Terms of Service</a> apply</p>
                     </div>
@@ -86,7 +202,7 @@
         <!-- CATEGORIES -->
         <nav class="category navbar navbar-expand-lg nav-light border-bottom shadow-sm">
             <div class="container">
-                <button class="navbar-toggler border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler border" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-store-alt"></i>
                     <!-- <span class="navbar-toggler-icon"></span> -->
                 </button>
