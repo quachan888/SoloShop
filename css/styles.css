@@ -85,6 +85,7 @@ body {
     color: #fafafa;
     display: block;
     text-decoration: none;
+    font-size: 0.9rem;
 }
 
 #footer a:hover {
@@ -103,13 +104,27 @@ body {
 }
 
 /* SLIDER */
-.carousel-inner img {
-    max-height: 50vh;
-    width: 100%;
-    object-fit: cover;
+.carousel-item img {
+    object-fit: contain;
+    /* width: auto; */
+    height: 500px;
 }
 
 /* Map warning */
 .mapwarning {
     font-size: 0.7rem;
 }
+
+/* Sell Profile  */
+.checked {
+    color: orange;
+}
+
+.sellerprofile {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* TEST */
