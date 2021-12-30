@@ -165,4 +165,9 @@ body {
     font-size: 0.875rem;
 }
 
+/* LOGIN MODAL */
+#loginModal .modal-footer {
+    font-size: 0.8rem;
+}
+
 /* TEST */

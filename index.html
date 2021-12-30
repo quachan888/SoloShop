@@ -39,16 +39,7 @@
                 <div class="col-lg-5 col-8 text-align-right loginmenu order-lg-last">
                     <ul class="nav justify-content-end">
                         <li class="nav-item text-center d-none d-md-block">
-                            <a class="nav-link" href="#"><i class="far fa-heart"></i><br />Saved</a>
-                        </li>
-                        <li class="nav-item text-center">
-                            <a class="nav-link" href="#"><i class="fas fa-comments-dollar"></i><br />Inbox</a>
-                        </li>
-                        <li class="nav-item text-center d-none d-md-block">
-                            <a class="nav-link" href="#"><i class="fa fa-tag"></i><br />Selling</a>
-                        </li>
-                        <li class="nav-item text-center">
-                            <a class="nav-link" href="#"> <img class="profileicon" src="https://images.offerup.com/tcz15iLF8DSJKLo137vN3MjYMPE=/100x100/smart/a8de/a8dee998683f4e83adc0c65f3959e380.jpg" alt="seller profile icon" /> <i class="fas fa-chevron-down"></i> </a>
+                            <a type="button" class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</a>
                         </li>
                     </ul>
                 </div>
@@ -60,6 +51,36 @@
                 </div>
             </div>
         </div>
+
+        <!-- Modal: LOGIN -->
+        <!-- Button trigger modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bold" id="loginModalLabel">Sign up / Log in</h5>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="logo text-center fs-2 my-3">
+                        <div class="text-secondary">Solo<span class="text-primary">Shop</span></div>
+                    </div>
+                    <div class="modal-body mb-5">
+                        <div class="d-grid gap-2 col-9 mx-auto">
+                            <button class="btn btn-primary" type="button"><i class="fab fa-facebook"></i> Continue with Facebook</button>
+                            <button class="btn btn-success" type="button"><i class="fab fa-google"></i> Continue with Google</button>
+                            <button class="btn btn-dark" type="button"><i class="fab fa-apple"></i> Continue with Apple</button>
+                            <button class="btn btn-warning" type="button"><i class="far fa-envelope"></i> Continue with email</button>
+                        </div>
+                    </div>
+                    <div class="modal-footer mb-5">
+                        <p>By tapping any of the buttons above, you agree to the <a href="">SoloShop Terms of Service</a> and acknowledge the <a href="">SoloShop Privacy Policy</a></p>
+                        <p>This site is protected by reCAPTCHA and the <a href="">Google Privacy Policy</a> and the <a href="">Google Terms of Service</a> apply</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- END NAVBAR -->
 
         <!-- CATEGORIES -->
